@@ -11,3 +11,7 @@
 - [任务三：三栏式布局](https://youngfuner.github.io/ife-2016/tasks/03/)
 - [任务四：定位和居中问题](https://youngfuner.github.io/ife-2016/tasks/04/)
 - [任务五：零基础HTML及CSS编码（二）](https://youngfuner.github.io/ife-2016/tasks/05/)
+
+### 阶段2任务
+
+- [任务三十三：听指令的小方块（一）](https://youngfuner.github.io/ife-2016/tasks/33/)
