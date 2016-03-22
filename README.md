@@ -14,4 +14,5 @@
 
 ### 阶段2任务
 
+- [任务二十六：行星与飞船（一）](https://youngfuner.github.io/ife-2016/tasks/26/)
 - [任务三十三：听指令的小方块（一）](https://youngfuner.github.io/ife-2016/tasks/33/)
