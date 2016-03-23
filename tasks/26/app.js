@@ -49,9 +49,15 @@ var Mediator = {
         setTimeout(function () {
             Logger.log('Mediator: 命令传输成功, 让编号为' + cmd.shipId + '的飞船 ' + cmd.cmd);
             // 广播命令
-            for (var i = 0; i < SPACE_SHIPS.length; i++) {
-                if (typeof SPACE_SHIPS[i].onCmdReceive === 'function') {
-                    SPACE_SHIPS[i].onCmdReceive(cmd);//广播信息后会传给每个订阅者
+            var tmpShips = [];
+            var i;
+            // 因为销毁飞船会删除 SPACE_SHIPS 中的元素, 遍历的时候要用另外一个列表
+            for (i = 0; i < SPACE_SHIPS.length; i++) {
+                tmpShips.push(SPACE_SHIPS[i]);
+            }
+            for (i = 0; i < tmpShips.length; i++) {
+                if (typeof tmpShips[i].onCmdReceive === 'function') {
+                    tmpShips[i].onCmdReceive(cmd);//广播信息后会传给每个订阅者
                 }
             }
         }, 1000);
@@ -154,8 +160,9 @@ SpaceShip.prototype.onDraw = function (time) {
 // 飞船销毁
 SpaceShip.prototype.dispose = function () {
     for (var i = 0; i < SPACE_SHIPS.length; i++) {
-        if (this.id === SPACE_SHIPS[i].id) {
+        if (this.id == SPACE_SHIPS[i].id) {
             SPACE_SHIPS.splice(i, 1);
+            break;
         }
     }
     // 在 DOM 中删除该元素
