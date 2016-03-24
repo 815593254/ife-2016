@@ -1,0 +1,700 @@
+// color
+$white = #fff
+$whitesmoke = #f5f5f5
+$gainsboro = #eee
+$gray-lighter = #ddd
+$grey-light = #ccc
+$grey = #bbb
+$grey-dark = #999
+$grey-dim = #666
+$black-light = #444
+$black-deep = #222
+$red = #e74f4d
+$red-dark = #bf4f49
+$blue-bright = #87daff
+$blue = #0684bd
+$blue-deep = #33353f
+$blue-dark = #2f3038
+
+*
+  box-sizing: border-box
+
+body
+  min-width: 970px
+  margin: 0
+  padding: 0
+  background: $white
+  font-family: "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif
+
+border-radius()
+  -webkit-border-radius: arguments
+  -moz-border-radius: arguments
+  border-radius: arguments
+
+transition()
+  transition: arguments
+  -moz-transition: arguments
+  -webkit-transition: arguments
+  -o-transition: arguments
+
+.container
+  width: 100%
+  max-width: 1024px
+  margin-right: auto
+  margin-left: auto
+  padding-left: 15px
+  padding-right: 15px
+  & > .navbar-header
+    margin-right: 0
+    margin-left: 0
+
+  .navbar-brand
+    margin-left: -15px
+
+header
+  width: 100%
+  background: #fff
+  position: fixed
+  top: 0
+  z-index: 999
+
+img
+  vertical-align: middle
+  border: 0
+
+a
+  color: #337ab7
+  text-decoration: none
+  background-color: transparent
+
+ol, ul
+  margin-top: 0
+  padding: 0
+  list-style: none
+
+button
+  cursor: pointer
+  border: transparent
+
+.navbar
+  color: $white
+  min-width: 970px
+  position: relative
+  min-height: 55px
+  border: 1px solid transparent
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .1)
+
+  .navbar-header
+    float: left
+
+  .navbar-brand
+    float: left
+    height: 55px
+    padding: 15px 15px
+    font-size: 20px
+    line-height: 25px
+    color: $black-deep
+    img
+      display: inline-block
+      height: 30px
+      position: relative
+      top: -5px
+      margin-right: 5px
+
+  .nav
+    padding-left: 0
+    margin-bottom: 0
+    list-style: none
+    font-size: 14px
+    li
+      float: left
+      position: relative
+      display: block
+      &.active
+        a
+          color: $red
+      a
+        color: $grey-dim
+        position: relative
+        display: block
+        padding: 10px 15px
+        line-height: 25px
+        padding-top: 15px
+        padding-bottom: 15px
+        text-align: center
+        transition(color .5s)
+        &:hover
+          color: $red
+
+  .navbar-right
+    float: right !important
+    margin: 0 -15px 0 0
+
+.navbar li.active > a:after, .navbar li > a:hover:after
+  position: absolute
+  left: 0
+  bottom: 0
+  width: 100%
+  height: 3px
+  background: $red
+  content: ''
+  transition: all 250ms
+
+.row, .clearfix
+  &:after
+    content: "."
+    display: block
+    height: 0
+    visibility: hidden
+    clear: both
+
+.wrapper
+  float: left
+  width: 100%;
+  margin-right: -370px;
+
+.main-content
+  width: auto
+  margin-right: 370px
+
+footer
+  color: $white
+  background: $blue-deep
+  width: 100%
+  padding-top: 20px
+  padding-bottom: 20px
+  line-height: 1.5
+  font-size: 14px
+  .left-part
+    float: left
+
+  .right-part
+    float: right
+
+  a
+    color: $white
+
+
+.img-icon
+  width: 20px
+  height: 20px
+  margin-top: -5px
+  background-size: contain
+  background-position: center
+  //background-attachment: fixed
+  background-repeat: no-repeat
+  display: inline-block
+  vertical-align: middle
+  &.user
+    background-image: url("imgs/user.png")
+
+  &.items
+    width: 35px
+    height: 35px
+    // 居中
+    margin: 0 auto
+    // display 为 block, margin: 0 auto 才有效果
+    display: block
+    &.item1
+      background-image: url("imgs/item1.png")
+    &.item2
+      background-image: url("imgs/item2.png")
+    &.item3
+      background-image: url("imgs/item3.png")
+    &.item4
+      background-image: url("imgs/item4.png")
+
+  &.qq
+    background-image: url("imgs/qq.png")
+  &.twitter
+    background-image: url("imgs/twitter.png")
+  &.weibo
+    background-image: url("imgs/weibo.png")
+  &.earth
+    background-image: url("imgs/earth.png")
+
+  &.logo
+    background-image: url("imgs/logo.png")
+    &.center-block
+      width: 70px
+      height: 70px
+      margin: 0 auto
+      display: block
+
+.color-red
+  color: $red !important
+
+.main-content
+  width: 100%
+  margin-top: 50px
+  .intro
+    width: 100%
+    position: relative
+    height: 600px
+    height: calc(100vmin - 50px)
+    display: -webkit-flex
+    display: flex
+    flex-direction: column
+    -webkit-justify-content: center
+    justify-content: center
+    .background
+      position: absolute
+      top: 0
+      width: 100%
+      height: 100%
+      background: url("imgs/travel.jpg")
+      background-size: cover
+      background-position: center
+      //-webkit-filter: brightness(0.8)
+      //-moz-filter: brightness(0.8)
+      //-o-filter: brightness(0.8)
+      //-ms-filter: brightness(0.8)
+      //filter: brightness(0.8)
+      z-index: -1
+    .content
+      padding-left: 120px
+      color: $white
+      h2
+        font-size: 60px
+        margin-bottom: 10px
+      p
+        font-size: 20px
+        line-height: 1.5
+      button
+        color: $white
+        background-color: $red
+        font-size: 25px;
+        padding: 10px 80px;
+
+  .features
+    margin-top: 50px
+    ul
+      list-style: none
+      li
+        float: left
+        width: 25%
+        display: block
+        font-size: 16px
+        color: $grey-dark
+        p
+          margin-top: 10px
+          border-right: 1px solid $grey-light
+          padding: 10px 35px
+          text-align: center
+
+  .question
+    background-color: $gainsboro
+    padding: 60px 30px
+    h2
+      font-size: 45px
+      color: $grey
+      text-align: center
+      margin: 30px auto 0
+
+  .search
+    width: 100%
+    height: 320px
+    background: url("imgs/new-world.jpg")
+    background-size: cover
+    background-position: center
+
+    h2
+      font-size: 22px
+      color: $white
+      text-align: center
+      margin: 0
+      padding-top: 50px
+      padding-bottom: 5px
+    p
+      color: $white
+      text-align: center
+      font-size: 14px
+    .select-area
+      margin: 50px auto 0
+      text-align: center
+      select
+        border: solid 1px $white
+        -moz-appearance: none
+        -webkit-appearance: none
+        appearance: none
+        background: #fff url("imgs/select-bg.png") no-repeat scroll right 10px center
+        padding-right: 20px
+        padding-left: 15px
+        color: $grey-light
+        height: 35px;
+        width: 210px
+        margin-right: 25px
+        border-radius: 0
+      button
+        height: 35px
+        width: 210px
+        margin-right: 25px
+        border: 0
+        border-radius: 0
+        background-color: $red-dark
+        color: $white
+        font-size: 16px
+        letter-spacing: 25px
+        text-align: center
+        padding-left: 25px
+
+  .activity
+    padding: 50px
+    background-color: $whitesmoke
+    ul
+      list-style: none
+      li
+        float: left
+        width: 25%
+        display: block
+        font-size: 16px
+        color: $grey-dark
+        img
+          width: 200px
+          border: 1px solid $gray-lighter
+          padding: 10px
+          background-color: $white
+          margin: 0 auto
+          display: block
+        h3
+          color: $grey-dim
+          text-align: center
+          font-size: 18px
+          margin-bottom: 5px
+        p
+          color: $grey
+          margin-top: 10px
+          text-align: center
+          font-size: 14px
+        &.display-top
+          h3
+            margin-top: 0
+            letter-spacing: 20px
+            margin-left: 20px
+            font-size: 22px;
+
+  .details
+    .part1
+      height: 550px
+      margin: 0 auto
+      display: -webkit-flex
+      display: flex
+      -webkit-align-items: stretch
+      align-items: stretch
+      .left
+        flex: 2
+        background: url("imgs/sock.jpg")
+        background-size: cover
+        background-position: center
+        color: $white
+        text-align: center
+        position: relative
+        display: -webkit-flex
+        display: flex
+        flex-direction: column
+        -webkit-justify-content: center
+        justify-content: center
+        -webkit-align-items: center
+        align-items: center
+        h2
+          font-size: 45px
+          margin: 0
+          &.big-text
+            font-size: 150px
+            margin: 0
+        &:after
+          position: absolute
+          top: 50%
+          margin-top: -10px
+          right: 0
+          content: ''
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 20px 20px 20px 0
+          border-color: transparent $white transparent transparent
+        p
+          font-size: 18px
+          line-height: 1.5
+          margin: 0
+      .right
+        flex: 1
+        display: -webkit-flex
+        display: flex
+        flex-direction: column
+        -webkit-justify-content: center
+        justify-content: center
+        -webkit-align-items: center
+        align-items: center
+        .content
+          margin: 0 auto
+          text-align: center
+
+          h2
+            font-size: 22px
+            display: inline
+            text-align: center
+            color: $black-light
+          span
+            position: relative
+            color: $red
+            font-size: 22px
+            padding-left: 22px
+            &:before
+              display: block
+              content: ''
+              width: 1px
+              height: 28px
+              position: absolute
+              background-color: $black-light
+              top: -3px
+              left: 8px
+              -webkit-transform: rotate(405deg)
+              transform: rotate(40deg)
+          p
+            color: $grey-light
+            font-size: 13px
+            line-height: 2
+            display: block
+            width: 65%
+            text-align: justify
+            margin: 30px auto
+        button
+          margin-top: 20px
+          font-size: 16px
+          padding: 8px 25px
+          color: $red
+          background-color: $white
+          border: 1px solid $red
+
+        ul
+          list-style: none
+          display: block
+          padding: 0
+          margin: 20px auto
+          li
+            width: 10px
+            height: 10px
+            display: inline-block
+            border-radius(100%)
+            margin-right: 5px
+            background-color: $white
+            border: 1px solid $grey
+            &.active
+              background-color: $grey
+    .part2
+      height: 550px
+      display: -webkit-flex
+      display: flex
+      -webkit-align-items: stretch
+      align-items: stretch
+      text-align: center
+      .item1, .item2, .item3
+        flex: 1
+        display: -webkit-flex
+        display: flex
+        flex-direction: column
+        -webkit-justify-content: center
+        justify-content: center
+        -webkit-align-items: center
+        align-items: center
+      .item1
+        background-color: $red
+
+      .item1, .item2
+        h2
+          line-height: 1.2
+          color: $white
+          font-size: 22px
+          font-weight: normal
+      .item2
+        .bottom-line
+          &:after
+            background-color: $grey-dim
+        h2
+          color: $grey-dim
+
+      .item3
+        background: url("imgs/girl.jpg")
+        background-size: cover
+        background-position: center
+        position: relative
+        &:before
+          position: absolute
+          top: 50%
+          margin-top: -10px
+          left: 0
+          content: ''
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 20px 0 20px 20px
+          border-color: transparent transparent transparent $white
+      button
+        font-size: 20px
+        padding: 8px 50px
+        background-color: transparent
+        margin-top: 20px
+      .btn-white
+        color: $white
+        border: 1px solid $white
+      .btn-red
+        color: $red
+        border: 1px solid $red
+  .volunteer
+    margin: 80px auto
+    .header-desc
+      max-width 500px
+      text-align: center
+      margin: 0 auto
+      .bottom-line
+        &:after
+          background-color: $red
+      h2
+        font-size: 22px
+        color: $grey-dim
+      p
+        font-size: 14px
+        color: $grey
+
+    .register
+      margin-top: 60px
+      .register-info
+        float: left
+        width: 35%
+
+        h4
+          font-size: 16px
+          color: $grey-dim
+          margin-bottom: 20px
+          margin-top: 0
+        p
+          font-size: 14px
+          color: $grey
+          line-height: 1.5
+
+        a.more
+          float: right
+          color: $grey-dim
+          font-size: 12px
+
+      .register-form
+        float: right
+        width: 60%
+        .form-group
+          margin-bottom: 20px
+
+        button, input, textarea
+          border: 0
+          float: left
+          width: 100%
+          background-color: $whitesmoke
+          padding: 5px 15px
+        button
+          font-size: 16px
+          padding: 10px 15px
+
+        input
+          height: 40px
+
+  .contact
+    background-color: $blue-dark
+    padding-top: 80px
+    padding-bottom: 80px
+    .text-desc
+      max-width: 600px
+      margin: 0 auto 35px
+      color: $white
+      text-align: center
+      h2
+        font-size: 20px
+      p
+        font-size: 14px
+
+    .send-email
+      margin: 0 auto
+      display: table
+      input
+        width: 420px
+        height: 40px
+        padding-left: 15px
+        font-size: 14px
+
+      button
+        height: 40px
+        width: 70px
+        color: $white
+        font-size: 16px
+        padding-left: 10px
+        letter-spacing: 10px
+        background-color: $grey-dim
+
+    .social-links
+      margin: 30px auto 0
+      ul
+        margin: 0 auto
+        display: table
+        li
+          display: inline-block
+          margin: 0 15px
+          .img-icon
+            width: 25px
+            height: 25px
+
+.input-group
+  position: relative
+  display: table
+  border-collapse: separate
+  .form-control
+    position: relative
+    z-index: 2
+    float: left
+    width: 100%
+    margin-bottom: 0
+  .form-control:first-child
+    display: table-cell
+
+.input-group-btn
+  position: relative
+  font-size: 0
+  white-space: nowrap
+
+.input-group-btn
+  width: 1%
+  white-space: nowrap
+  vertical-align: middle
+
+.input-group .form-control, .input-group-addon, .input-group-btn
+    display: table-cell
+
+
+// 标题下面的红色线
+.bottom-line
+  &:after
+    content: ""
+    width: 30px
+    height: 3px
+    background-color: $white
+    display: block
+    margin: 7px auto
+    transition(width .2s)
+
+  &:hover
+    &:after
+      width: 200px
+
+.row
+  margin-left: -15px
+  margin-right: -15px
+  .col-md-6, .col-md-12
+    float: left
+    width: 50%
+    position: relative
+    min-height: 1px
+    padding-right: 15px
+    padding-left: 15px
+
+  .col-md-6
+    width: 50%
+  .col-md-12
+    width: 100%

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <title>Task07-实现常见的技术产品官网的页面架构及样式布局</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+    <div class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img src="imgs/logo.png">
+                    <span>新世界</span>
+                </a>
+            </div>
+
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">首页</a>
+                    </li>
+                    <li>
+                        <a href="#">最新活动</a>
+                    </li>
+                    <li>
+                        <a href="#">项目介绍</a>
+                    </li>
+                    <li>
+                        <a href="#">爱心社区</a>
+                    </li>
+                    <li>
+                        <a href="#">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="#" class="color-red"><span class="img-icon user"></span> 登录</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="main-content" id="main-content">
+    <section class="intro">
+        <div class="background"></div>
+        <div class="content">
+            <h2>Time of new life</h2>
+            <p>新时代，年轻的人们让我们一起<br>体验新生活，享受新生活</p>
+            <button>开始体验</button>
+        </div>
+    </section>
+    <section class="features">
+        <ul class="clearfix">
+            <li>
+                <i class="img-icon items item1"></i>
+                <p>打造全新世界观，让你更爱你的生活</p>
+            </li>
+            <li>
+                <i class="img-icon items item2"></i>
+                <p>丰富多彩的公益活动，发挥新世界的主人公意识</p>
+            </li>
+            <li>
+                <i class="img-icon items item3"></i>
+                <p>时尚的新理念，超前体验未知的生活</p>
+            </li>
+            <li>
+                <i class="img-icon items item4"></i>
+                <p>完善的培养机制，培养你全新的世界观</p>
+            </li>
+        </ul>
+    </section>
+    <section class="question">
+        <i class="img-icon logo center-block"></i>
+        <h2>关于新世界，你不知道的还有什么？</h2>
+    </section>
+    <section class="search">
+        <h2 class="bottom-line">查找新世界城市活动信息</h2>
+        <p>每个城市的有不同的活动信息，请自主查询您所需要了解的城市</p>
+        <div class="select-area">
+            <select name="country">
+                <option value="">中国</option>
+                <option value="">日本</option>
+                <option value="">美国</option>
+            </select>
+            <select name="province">
+                <option value="">省份</option>
+                <option value="">北京市</option>
+                <option value="">天津市</option>
+                <option value="">河北</option>
+                <option value="">河南</option>
+            </select>
+            <select name="city">
+                <option value="">城市</option>
+                <option value="">北京</option>
+                <option value="">上海</option>
+                <option value="">沈阳</option>
+                <option value="">杭州</option>
+                <option value="">广州</option>
+            </select>
+            <button>搜索</button>
+        </div>
+    </section>
+
+    <section class="activity">
+        <div class="container clearfix">
+            <ul>
+                <li>
+                    <img src="imgs/painting1.jpg">
+                    <div class="text-desc">
+                        <h3>北京活动</h3>
+                        <p>新社区大联盟</p>
+                    </div>
+                </li>
+                <li class="display-top">
+                    <div class="text-desc">
+                        <h3>上海活动</h3>
+                        <p>夜上海新景观探索</p>
+                    </div>
+                    <img src="imgs/painting2.jpg">
+                </li>
+                <li>
+                    <img src="imgs/painting3.jpg">
+                    <div class="text-desc">
+                        <h3>深圳活动</h3>
+                        <p>全新海岸线观点站</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="imgs/painting4.jpg">
+                    <div class="text-desc">
+                        <h3>香港活动</h3>
+                        <p>奢侈消费大派送</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="details">
+        <div class="part1">
+            <div class="left">
+                <h2>新世界</h2>
+                <h2 class="big-text">TIME</h2>
+                <p>&copy;新世界 - 北京</p>
+                <p>2016.04.01</p>
+            </div>
+            <div class="right">
+                <div class="content">
+                    <h2>新世界</h2>
+                    <span>01</span>
+                    <p>新世界新世新世界新世界新世界新世界新世界新新世界新世新世界新新世界新世新世界新世界新世界新世界新世界新新世界新世新世界新新世界新世新世界新世界新世界新世界新世界新新世界新世新世界新</p>
+                </div>
+                <button>更多详情</button>
+                <ul>
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div class="part2">
+            <div class="item1">
+                <div class="bottom-line">
+                    <h2>新时代<br>关于爱生活的我们</h2>
+                </div>
+                <button class="btn-white">查看更多</button>
+            </div>
+            <div class="item2">
+                <div class="bottom-line">
+                    <h2>新时代<br>关于爱生活的我们</h2>
+                </div>
+                <button class="btn-red">查看更多</button>
+            </div>
+            <div class="item3"></div>
+        </div>
+    </section>
+
+    <section class="volunteer">
+        <div class="container">
+            <div class="header-desc">
+                <h2 class="bottom-line">成为我们的志愿者</h2>
+                <p>新世界的大家庭需要每一个爱生活的人的加入，如果你够年轻，有梦想，有激情那就不要犹豫，快来加入我们，成为改变所有人生活的人</p>
+            </div>
+            <div class="register clearfix">
+                <div class="register-info">
+                    <ul>
+                        <li>
+                            <h4>新世界志愿者协议</h4>
+                            <p>加入新世界志愿者的人员必须遵守中华人民共共和国的相关法律法，并且本着平等资源的原则...</p>
+                            <a href="#" class="more">more</a>
+                        </li>
+                        <li>
+                            <h4>新世界志愿者权利</h4>
+                            <p>新世界志愿者享受新世界内部所有资源共享的权利，并且享受所在地新世界活动的优先参与资格并且享受...</p>
+                            <a href="#" class="more">more</a>
+                        </li>
+                        <li>
+                            <h4>新世界志愿者协议</h4>
+                            <p>更多条款</p>
+                            <a href="#" class="more">more</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="register-form clearfix">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input type="text" name="name" placeholder="姓名">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" name="age" placeholder="年龄">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input type="text" name="contact" placeholder="联系方式">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" name="address" placeholder="联系地址">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <textarea name="desc" rows="8" placeholder="请简单描述您梦想的生活"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <button class="col-md-12">提交申请</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="text-desc">
+                <h2>联系我们</h2>
+                <p>为了更好的获取我们最新的产品资讯，您可以留下您的电子邮箱快速订阅我们的产品资讯也可以通过以下任何方式关注我们动态</p>
+            </div>
+            <div class="send-email">
+                <div class="input-group clearfix">
+                    <input type="email" class="form-control" placeholder="someone@email.com">
+                    <button class="form-control input-group-btn">提交</button>
+                </div>
+            </div>
+            <div class="social-links">
+                <ul>
+                    <li><a href="#"><i class="img-icon qq"></i></a></li>
+                    <li><a href="#"><i class="img-icon weibo"></i></a></li>
+                    <li><a href="#"><i class="img-icon twitter"></i></a></li>
+                    <li><a href="#"><i class="img-icon earth"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+</div>
+
+<footer>
+    <div class="container clearfix">
+        <div class="left-part">&copy;2016新世界</div>
+        <div class="right-part"><a href="#main-content">Back to top</a></div>
+    </div>
+</footer>
+
+</body>
+</html>
