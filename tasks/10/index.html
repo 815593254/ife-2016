@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+			}
+			.flex_container{
+				padding: 20px;
+				display: flex;
+				flex-flow: row wrap;
+				align-items: center;
+				justify-content: space-between;
+			}
+			.box{
+				width:148px;
+				border: 1px solid red;
+				margin-bottom: 15px;
+			}
+			.box1{
+				height: 118px;
+			}
+			.box2{
+				height: 98px;
+			}
+			.box3{
+				height: 38px;
+			}
+			.box4{
+				height: 198px;
+				border-color: blue;
+			}
+			@media screen and (max-width: 640px) {
+				.flex_container{
+					align-items: flex-start;
+				}
+				.box4{
+					order: -1;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="flex_container">
+			<div class="box box1">1</div>			
+			<div class="box box2">2</div>
+			<div class="box box3">3</div>
+			<div class="box box4">4</div>
+		</div>
+	</body>
+</html>
