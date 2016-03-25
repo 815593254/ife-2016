@@ -9,8 +9,7 @@ body {
   font-family: "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif;
 }
 .container {
-  width: 100%;
-  max-width: 1024px;
+  width: 95%;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -98,10 +97,10 @@ button {
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: center;
-  transition: color 0.5s;
   -moz-transition: color 0.5s;
   -webkit-transition: color 0.5s;
   -o-transition: color 0.5s;
+  transition: color 0.5s;
 }
 .navbar .nav li a:hover {
   color: #e74f4d;
@@ -119,10 +118,10 @@ button {
   height: 3px;
   background: #e74f4d;
   content: '';
-  transition: all 250ms;
   -moz-transition: all 250ms;
   -webkit-transition: all 250ms;
   -o-transition: all 250ms;
+  transition: all 250ms;
 }
 .row:after,
 .clearfix:after {
@@ -574,6 +573,7 @@ footer a {
   border: 1px solid #e74f4d;
 }
 .main-content .volunteer {
+  max-width: 1024px;
   margin: 80px auto;
 }
 .main-content .volunteer .header-desc {
@@ -726,10 +726,10 @@ footer a {
   background-color: #fff;
   display: block;
   margin: 7px auto;
-  transition: width 0.2s;
   -moz-transition: width 0.2s;
   -webkit-transition: width 0.2s;
   -o-transition: width 0.2s;
+  transition: width 0.2s;
 }
 .bottom-line:hover:after {
   width: 200px;
